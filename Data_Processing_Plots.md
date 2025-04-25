@@ -255,6 +255,5 @@ Print the combined plot with a single common legend
 print(combined_growth_plot)
 ```
 
-![](Data_Processing_Plots_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
 
 
