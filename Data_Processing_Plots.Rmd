@@ -188,6 +188,7 @@ plot_growth_curve <- function(df, set_title) {
 ```
 
 Plotting the growthcurves
+
 ```{r}
 library(patchwork)
 
@@ -207,11 +208,9 @@ Print the combined plot with a single common legend
 print(combined_growth_plot)
 ```
 
- 6. Display Final Plots
+Display Final Plots
+
 ```{r}
 print(combined_auc_plot)
 print(combined_growth_plot)
 ```
- 
-
-
