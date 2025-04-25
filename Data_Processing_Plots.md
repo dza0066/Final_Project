@@ -257,10 +257,4 @@ print(combined_growth_plot)
 
 ![](Data_Processing_Plots_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
 
-# ================================
 
-# 6. Display Final Plots
-
-# ================================
-
-print(combined_auc_plot) print(combined_growth_plot)
