@@ -182,8 +182,7 @@ print(combined_growth_plot)
 
 
 
-# ================================
 # 6. Display Final Plots
-# ================================
+
 print(combined_auc_plot)
 print(combined_growth_plot)

@@ -207,10 +207,11 @@ Print the combined plot with a single common legend
 print(combined_growth_plot)
 ```
 
-
-
-# ================================
-# 6. Display Final Plots
-# ================================
+ 6. Display Final Plots
+```{r}
 print(combined_auc_plot)
 print(combined_growth_plot)
+```
+ 
+
+
