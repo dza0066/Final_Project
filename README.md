@@ -11,16 +11,17 @@ This repository contains data and scripts used to
 ## Table of Contents
 
 - [Project Overview](#project-overview)
-- [File Tree](#directory structure)
-- [Data](#Raw and procesceed Data)
-- [Growth_Curve_IDE_5](#Raw data from plate reader)
-- [Data_Processing_Plots_files](#Auto generated file and images)
-- [Figures](#Manuscript ready figures)
+- [File Tree](#file-tree)
+- [Data](#data)
+- [Growth_Curve_IDE_5](#growth_curve_ide_5)
+- [Data_Processing_Plots_files](#data_processing_plots_files)
+- [Figures](#figures)
 - [Requirements](#requirements)
 - [Data Processing Workflow](#data-processing-workflow)
 - [Visualization](#visualization)
 - [Usage](#usage)
 - [Troubleshooting](#troubleshooting)
+
 
 
 ---
