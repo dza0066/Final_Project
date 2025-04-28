@@ -2,14 +2,17 @@
 
 # Growth Curve Data Analysis
 
-This project provides an R-based pipeline for processing, analyzing, and visualizing microbial growth curve data from 96-well plates. The workflow includes data cleaning, normalization, area under the curve (AUC) calculation, and publication-quality plotting for two experimental datasets (Set A and Set B).
+This repository contains data and scripts used to 
 
+1.analyse the growth curve of strains of Xylella fastidiosa by growing it in a standard media and media amended with 2mM Ca.The experiment setup is done on a 96 well plate assay. The growth is recorded every 24 hour, one time point per day.
+.
 ---
 
 ## Table of Contents
 
 - [Project Overview](#project-overview)
-- [Folder Structure](#folder-structure)
+- [File Tree](#folder-structure)
+- [Growth_Curve_IDE_5](#Raw data from plate reader)
 - [Requirements](#requirements)
 - [Data Processing Workflow](#data-processing-workflow)
 - [Visualization](#visualization)
@@ -21,7 +24,7 @@ This project provides an R-based pipeline for processing, analyzing, and visuali
 
 ## Project Overview
 
-This pipeline automates the analysis of microbial growth curves measured in 96-well plates. It:
+
 - Reads and processes raw CSV data for multiple days and two datasets (Set A and Set B).
 - Normalizes OD600 readings by subtracting blank controls.
 - Calculates mean OD600 values and AUC for each strain and treatment.
@@ -32,22 +35,112 @@ This pipeline automates the analysis of microbial growth curves measured in 96-w
 ## Folder Structure
 
 ```
-Final_Project/
-│
-├── Growth_curve_IDE_5/
+.
+├── Data
+│   ├── Processed_data
+│   │   ├── combined_data.csv
+│   │   ├── combined_data_A.csv
+│   │   └── combined_data_B.csv
+│   └── Raw_data
+│       ├── A_0.csv
+│       ├── A_1.csv
+│       ├── A_2.csv
+│       ├── A_3.csv
+│       ├── A_4.csv
+│       ├── A_5.csv
+│       ├── A_6.csv
+│       ├── A_7.csv
+│       ├── B_0.csv
+│       ├── B_1.csv
+│       ├── B_1.xlsx
+│       ├── B_2.csv
+│       ├── B_2.xlsx
+│       ├── B_3.csv
+│       ├── B_3.xlsx
+│       ├── B_4.csv
+│       ├── B_4.xlsx
+│       ├── B_5.csv
+│       ├── B_5.xlsx
+│       ├── B_6.csv
+│       ├── B_6.xlsx
+│       ├── B_7.csv
+│       ├── B_7.xlsx
+│       ├── B_bio.xlsx
+│       ├── B_day_0.xlsx
+│       └── B_Plk.xlsx
+├── Data_Processing_Plots.md
+├── Data_processing_plots.pdf
+├── Data_Processing_Plots.R
+├── Data_Processing_Plots.Rmd
+├── Data_Processing_Plots_files
+│   └── figure-gfm
+│       ├── unnamed-chunk-10-1.png
+│       ├── unnamed-chunk-11-1.png
+│       ├── unnamed-chunk-11-2.png
+│       └── unnamed-chunk-7-1.png
+├── Figures
+│   ├── Rplot01_GC.tiff
+│   └── Rplot_AUC.tiff
+├── file_tree.txt
+├── Final_Project.Rproj
+├── Growth_curve_IDE_5
 │   ├── A_0.csv
 │   ├── A_1.csv
-│   ├── ... (up to A_7.csv)
+│   ├── A_2.csv
+│   ├── A_3.csv
+│   ├── A_4.csv
+│   ├── A_5.csv
+│   ├── A_6.csv
+│   ├── A_7.csv
 │   ├── B_0.csv
 │   ├── B_1.csv
-│   ├── ... (up to B_7.csv)
-│
-├── combined_data_A.csv
-├── combined_data_B.csv
-├── growth_curve_analysis.R
-├── README.md
-└── ...
+│   ├── B_1.xlsx
+│   ├── B_2.csv
+│   ├── B_2.xlsx
+│   ├── B_3.csv
+│   ├── B_3.xlsx
+│   ├── B_4.csv
+│   ├── B_4.xlsx
+│   ├── B_5.csv
+│   ├── B_5.xlsx
+│   ├── B_6.csv
+│   ├── B_6.xlsx
+│   ├── B_7.csv
+│   ├── B_7.xlsx
+│   ├── B_bio.xlsx
+│   ├── B_day_0.xlsx
+│   └── B_Plk.xlsx
+└── README.md
 ```
+---
+###Growth_Curve_IDE_5
+
+This contains the data generated from the plate reader. As my experiment has three replicate plates of each set. The plates were read is ascending order and their reading are in blocks, the first block is the first plate and so on. 
+
+In one 96 well plate, the first row A is used as a blank for PD2 and row H is used for PD2 + Calcium. The remaining rows B to G have 6 strains of bacteria. This experiment 
+ I have used two sets of strains namely strain A and strain B
+---
+
+---
+##Data
+
+Data contains of processed files and raw files. The processed files have  the OD reading corrected by subtracting from their respective blanks. Combined_data.csv is the file generated from processing and cleaning the plate reader data ssigning the with values of day, plate and treatment along with their both sets and name of the strains.
+
+---
+
+---
+##Data_Processing_Plots_files
+
+There are the files automatically generated while knitting the Markdown and contains of images generated while running the script.
+
+---
+
+---
+##Figures
+
+The manuscript ready figures generated through the plotting part of the code.The figures contain Area Under Growth Curve and a Normal growth Curve
+
+----
 
 ---
 
